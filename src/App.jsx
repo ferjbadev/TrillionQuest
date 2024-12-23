@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar'
-import Home from './components/Home'
+import Home from './Pages/Home'
+import About from './pages/About'
 import './App.css'
-import About from './components/About'
 
 function App() {
 
@@ -15,3 +15,4 @@ function App() {
 }
 
 export default App
+
