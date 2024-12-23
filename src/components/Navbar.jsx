@@ -3,7 +3,7 @@ const Navbar = () => {
         <div className="navbar z-20 fixed top-0 left-0 w-full">
             <div className="flex-1 space-x-20">
                 <a className="text-white text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300 ml-9">
-                    Trillion Quest
+                    Trillion Quest - casad
                 </a>
                 <a className="text-white text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
                     Why Choose Us
