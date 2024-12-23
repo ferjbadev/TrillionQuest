@@ -139,7 +139,7 @@ const About = () => {
             {/* Segunda parte del About */}
             <div className="flex text-white justify-center items-center py-10">
                 <div>
-                    <img src="/public/logo2.png" alt="Trillion Quest Logo" className="mx-auto w-[70%]" />
+                    <img src="./logo2.png" alt="Trillion Quest Logo" className="mx-auto w-[70%]" />
                 </div>
                 <div className="text-center">
                     <h1 className="font-bold text-5xl">
