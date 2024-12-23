@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Home = () => {
     return (
-        <div className="relative min-h-screen flex flex-col items-center overflow-hidden pt-20 z-20">
+        <div className="min-h-screen flex flex-col items-center z-20">
             {/* Aro de luz animado */}
             <motion.div
                 className="absolute inset-0 bg-[url('/aroDeLuz.png')] bg-no-repeat bg-center"

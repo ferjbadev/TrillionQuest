@@ -1,6 +1,8 @@
+import Home from './pages/Home'
 import Navbar from './components/Navbar'
-import Home from './Pages/Home'
-import About from './pages/About'
+import About from './Pages/About'
+import SocialMediaExpertise from './pages/SocialMediaExpertise'
+import AIPoweredBusiness from './pages/AIPoweredB'
 import './App.css'
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <AIPoweredBusiness />
+      <SocialMediaExpertise />
     </div>
   )
 }
