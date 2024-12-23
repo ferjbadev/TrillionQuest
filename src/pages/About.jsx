@@ -105,7 +105,7 @@ const About = () => {
             {/* Botón y texto */}
             <div className="flex justify-center items-center mt-20">
                 <button
-                    className="text-3xl bg-gradient-to-r from-gray-950 to-white/50 border border-white text-yellow-500 font-bold px-10 py-2 rounded-full flex items-center"
+                    className="text-3xl bg-gradient-to-r from-gray-950 to-white/50 border border-white hover:scale-110 text-yellow-500 font-bold px-10 py-2 rounded-full flex items-center"
                 >
                     LEARN MORE
                     <span className="ml-2 text-yellow-500">➔</span>
@@ -115,9 +115,12 @@ const About = () => {
                 </p>
             </div>
 
+            {/* Linea de separacion */}
+            <div className="w-full h-1 bg-white mb-5"></div>
+
             {/* Slider con logos */}
-            <div className="w-full mt-16 border-t border-white">
-                <Slider {...settings} className="py-5">
+            <div className="w-full bg-gradient-to-r from-gray-950 to-transparent">
+                <Slider {...settings} >
                     {partners.map((partner) => (
                         <div key={partner.name} className="flex items-center justify-center gap-3">
                             <partner.icon
@@ -130,22 +133,26 @@ const About = () => {
                     ))}
                 </Slider>
             </div>
+            {/* Linea de separacion */}
+            <div className="w-full h-1 bg-green-500"></div>
 
             {/* Segunda parte del About */}
             <div className="flex text-white justify-center items-center py-10">
                 <div>
                     <img src="/public/logo2.png" alt="Trillion Quest Logo" className="mx-auto w-[70%]" />
                 </div>
-                <div className="text-center max-w-lg">
-                    <h1 className="font-bold text-xl mt-6">
+                <div className="text-center">
+                    <h1 className="font-bold text-5xl">
                         <span className="text-white">PARTNER WITH</span> <br />
                         <span className="text-yellow-400">TRILLION QUEST</span><br />
                         <span className="text-white">AND HELP MILLIONS</span>
                     </h1>
-                    <p className="text-lg mt-2">
+                    <p className="text-2xl mt-2">
                         Together, we create success and change lives.
                     </p>
-                    <p className="text-3xl font-bold mt-4">100+</p>
+                    <div className='flex justify-center items-center'>
+                        <p className="text-3xl font-bold mt-4">100+</p>
+                    </div>
                     <a
                         href="#"
                         className="mt-6 inline-block px-6 py-3 bg-yellow-400 text-black font-bold rounded hover:bg-yellow-500"
