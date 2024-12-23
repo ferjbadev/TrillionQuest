@@ -6,7 +6,7 @@ const Home = () => {
         <div className="min-h-screen flex flex-col items-center z-20">
             {/* Aro de luz animado */}
             <motion.div
-                className="absolute inset-0 bg-[url('/aroDeLuz.png')] bg-no-repeat bg-center"
+                className="absolute inset-0 bg-[url('/assets/aroDeLuz.png')] bg-no-repeat bg-center"
                 style={{ backgroundSize: "80%" }}
                 animate={{
                     scale: [1, 1.1, 1], // Escala del aro

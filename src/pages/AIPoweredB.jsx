@@ -1,4 +1,4 @@
-import robotN from "../../public/assets/robot.png"
+import robotN from "../assets/robot.png"
 
 const AIPoweredBusiness = () => {
     return (

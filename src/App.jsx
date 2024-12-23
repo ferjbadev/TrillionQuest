@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import About from './pages/About'
 import SocialMediaExpertise from './pages/SocialMediaExpertise'
 import AIPoweredBusiness from './pages/AIPoweredB'
+import FromAds from './pages/FromAds'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <About />
       <AIPoweredBusiness />
       <SocialMediaExpertise />
+      <FromAds />
     </div>
   )
 }

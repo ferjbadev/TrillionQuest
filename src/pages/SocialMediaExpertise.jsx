@@ -1,21 +1,30 @@
-import robotN from "../../public/assets/robot.png"
+import telefono from "../assets/telefono.png"
+import chat from "../assets/chat1.png"
+
 
 const SocialMediaExpertise = () => {
     return (
-        <div className="w-full h-[100vh] flex items-center justify-center">
-            {/*INFORMATION */}
+        <div className="w-full h-[100vh] flex items-center justify-center p-">
 
-            <div className=" h-[60vh] w-full text-white flex justify-between">
+            <div className=" h-[60vh] w-full text-white flex justify-between relative">
 
-                <div className="bg-white w-[30vw]">
-                    <p className="text-black">IMGEN ACA</p>
+                <div className="bg-white h-full w-[20vw] relative">
+                    <img src={telefono} alt="telefono" className="h-full w-full" />
+
+
+
                 </div>
-                {/*
-                    <img src={robotN} alt="robot" className="h-full w-[40vw]" />
-                     */}
+
+                <div className="h-full w-full absolute right-40 bottom-1/4">
+
+                    <img
+                        src={chat}
+                        alt="chat1"
+                    />
+                </div>
 
 
-                <div className="mt-8 mr-4">
+                <div className="mt-8 ">
                     <p className="text-5xl font-bold">Social Media Expertise
                     </p>
 
