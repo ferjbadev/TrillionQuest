@@ -1,6 +1,6 @@
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
-import About from './Pages/About'
+import About from './pages/About'
 import SocialMediaExpertise from './pages/SocialMediaExpertise'
 import AIPoweredBusiness from './pages/AIPoweredB'
 import './App.css'
