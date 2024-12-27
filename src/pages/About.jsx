@@ -1,36 +1,7 @@
-import { FaMeta, FaGoogle, FaMicrosoft } from 'react-icons/fa6';
-import { SiOpenai } from 'react-icons/si';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import Slider from "../components/Slider";
 const About = () => {
-    const partners = [
-        { name: 'Meta', icon: FaMeta },
-        { name: 'OpenAI', icon: SiOpenai },
-        { name: 'Google', icon: FaGoogle },
-        { name: 'Microsoft', icon: FaMicrosoft },
-    ];
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 8000,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 0,
-        cssEase: "linear",
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    };
+
 
     return (
         <div className="relative min-h-screen flex flex-col items-center overflow-hidden pt-20">
@@ -119,20 +90,7 @@ const About = () => {
             <div className="w-full h-1 bg-white mb-5"></div>
 
             {/* Slider con logos */}
-            <div className="w-full bg-gradient-to-r from-gray-950 to-transparent">
-                <Slider {...settings} >
-                    {partners.map((partner) => (
-                        <div key={partner.name} className="flex items-center justify-center gap-3">
-                            <partner.icon
-                                className="w-20 h-20 text-white cursor-pointer hover:scale-125 hover:text-yellow-500 transition-all duration-300"
-                            />
-                            <span className="text-2xl font-bold text-white cursor-pointer hover:text-yellow-500 transition-opacity duration-300">
-                                {partner.name}
-                            </span>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
+            <Slider />
             {/* Linea de separacion */}
             <div className="w-full h-1 bg-green-500"></div>
 

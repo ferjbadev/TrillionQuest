@@ -6,7 +6,7 @@ const SocialMediaExpertise = () => {
     return (
         <div className="w-full h-[100vh] flex items-center justify-center p-">
 
-            <div className=" h-[60vh] w-full text-white flex justify-between relative">
+            <div className=" h-[60vh] w-full text-white flex justify-around relative">
 
                 <div className="bg-white h-full w-[20vw] relative">
                     <img src={telefono} alt="telefono" className="h-full w-full" />
@@ -15,7 +15,7 @@ const SocialMediaExpertise = () => {
 
                 </div>
 
-                <div className="h-full w-full absolute right-40 bottom-1/4">
+                <div className="h-full w-full absolute left-4 bottom-1/4">
 
                     <img
                         src={chat}

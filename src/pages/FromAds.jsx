@@ -3,7 +3,7 @@ import engranaje from '../assets/engranaje.png'
 
 const FromAds = () => {
     return (
-        <div className='w-full h-screen bg-black p-4 flex'>
+        <div className='w-full h-screen bg-black p-4 flex justify-center'>
             {/*Section 1*/}
             <section className='flex flex-col justify-center items-start h-screen'>
 

@@ -4,7 +4,7 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <nav className="absolute inset-0 bg-gradient-to-b from-gray-950/10 to-transparent text-white shadow-md z-50">
+        <div className="relative inset-0 bg-gradient-to-b from-gray-950/10 to-transparent text-white shadow-md z-50">
             <div className="container mx-auto flex items-center justify-between py-4 px-10">
                 {/* Logo y botones del lado izquierdo */}
                 <div className="flex items-center space-x-24">
@@ -111,7 +111,7 @@ const Navbar = () => {
                     </div>
                 )
             }
-        </nav >
+        </div >
     );
 };
 
