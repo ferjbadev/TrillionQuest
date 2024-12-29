@@ -23,7 +23,8 @@ const Cuadro = () => {
                             We craft strategic and creative campaigns that connect with your audience, maximize results, and stand out in the market. Blend data, innovation, and design with us.
                         </p>
                     </div>
-                    <img src="/luz.png" alt="Imagen Izquierda" className="w-24 h-24" />
+                    {/* Circulo pequeño */}
+                    <div className="w-24 h-24 bg-black border-2 border-white rounded-full mb-5 animate-glow"></div>
                 </motion.div>
 
                 {/* Cuadro central más grande */}
@@ -38,11 +39,12 @@ const Cuadro = () => {
                 >
                     <div className="flex flex-col items-center mt-16 text-justify">
                         <h3 className="text-xl text-yellow-500 font-bold mb-20 text-center">Social Media Management</h3>
-                        <p className="text-white font-bold">
-                            We specialize in building and expanding your social media presence with strategies that drive engagement, attract followers, and strengthen your brand.
+                        <p className="text-white font-bold leading-extra-loose">
+                            We specialize in building and expanding your social media presence with strategies that drive engagement, attract followers, and strengthen your brand. From creating compelling content to analyzing performance, we ensure your platforms not only grow but thrive.
                         </p>
                     </div>
-                    <img src="/luz.png" alt="Imagen Central" className="w-32 h-32" />
+                    {/* Circulo pequeño */}
+                    <div className="w-24 h-24 bg-black border-2 border-white rounded-full mb-5 animate-glow"></div>
                 </div>
 
                 {/* Cuadro derecho */}
@@ -64,7 +66,8 @@ const Cuadro = () => {
                             Streamline your operations with AI. Optimize tasks, reduce costs, and improve accuracy with intelligent solutions that simplify processes and drive growth.
                         </p>
                     </div>
-                    <img src="/luz.png" alt="Imagen Derecha" className="w-24 h-24" />
+                    {/* Circulo pequeño */}
+                    <div className="w-24 h-24 bg-black border-2 border-white rounded-full mb-5 animate-glow"></div>
                 </motion.div>
             </div>
         </div>

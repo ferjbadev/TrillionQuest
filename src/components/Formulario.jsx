@@ -2,7 +2,7 @@ const Formulario = () => {
     return (
         // Formulario
         <div
-            className="absolute left-48 top-96 transform -translate-y-1/2 bg-black/50 rounded-3xl z-30 pointer-events-auto"
+            className="absolute left-40 top-96 transform z-20 -translate-y-1/2 bg-gray-600/50 rounded-3xl pointer-events-auto"
             style={{ width: "311px", height: "390px" }}
         >
             <div className="w-full h-full p-6 rounded-lg text-center">

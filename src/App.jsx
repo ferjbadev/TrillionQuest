@@ -4,6 +4,7 @@ import About from './pages/About'
 import SocialMediaExpertise from './pages/SocialMediaExpertise'
 import AIPoweredBusiness from './pages/AIPoweredB'
 import FromAds from './pages/FromAds'
+import ContactUs from './pages/ContactUs'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <AIPoweredBusiness />
       <SocialMediaExpertise />
       <FromAds />
+      <ContactUs />
     </div>
   )
 }

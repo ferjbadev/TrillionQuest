@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 
 const Digital = () => {
     return (
-        <div className="relative flex md:flex-row justify-between items-center py-2 px-36 bg-gradient-to-r from-black via-gray-950 to-white">
+        <div className="relative flex md:flex-row justify-between items-center py-2 px-36 bg-gradient-to-r from-black via-gray-950 to-white z-auto">
             {/* Título de Digital Marketing */}
             <span className="text-4xl md:text-5xl font-bold tracking-wider text-white text-center md:text-left">
                 Digital Marketing
