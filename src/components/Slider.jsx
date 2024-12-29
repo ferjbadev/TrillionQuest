@@ -38,14 +38,14 @@ const PartnerSlider = () => {
                 <Slider {...settings}>
                     {partners.map((partner) => (
                         <div key={partner.name}>
-                            <div className="flex items-center justify-center space-x-4">
+                            <div className="flex items-center justify-center space-x-4 group cursor-pointer">
                                 {/* Ícono */}
                                 <partner.icon
-                                    className="w-16 h-20 text-white cursor-pointer hover:scale-110 hover:text-yellow-500 transition-transform duration-500 transform"
+                                    className="w-16 h-20 text-white transition-transform duration-500 group-hover:scale-125 group-hover:text-yellow-500"
                                     aria-label={partner.name}
                                 />
                                 {/* Nombre */}
-                                <span className="text-5xl font-semibold text-white cursor-pointer hover:text-yellow-500 transition-colors duration-300">
+                                <span className="text-5xl font-semibold text-white transition-colors duration-300 group-hover:text-yellow-500">
                                     {partner.name}
                                 </span>
                             </div>

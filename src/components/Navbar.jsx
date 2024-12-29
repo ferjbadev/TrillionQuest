@@ -9,7 +9,7 @@ const Navbar = () => {
                 {/* Logo y botones del lado izquierdo */}
                 <div className="flex items-center space-x-24">
                     <a href="#" className="text-4xl font-bold cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
-                        Trillion Quest
+                        Trillion Fundation
                     </a>
                     <a
                         href="#"

@@ -1,24 +1,26 @@
 
+
 const Parther = () => {
     return (
-        <div>
-            <div className="flex text-white justify-center items-center py-10">
+        <div className="">
+            <div className="flex text-white py-10">
                 {/* Logo */}
-
-                <img src="./logo2.png" alt="Trillion Quest Logo" />
+                <div className="w-1/2">
+                    <img src="./logo2.png" alt="Trillion Quest Logo" />
+                </div>
 
                 {/* Sección de texto */}
-                <div className="text-center">
+                <div className=" text-left px-10">
                     <h1 className="font-bold text-5xl">
                         <span className="text-white">PARTNER WITH</span> <br />
                         <span className="text-yellow-400">TRILLION QUEST</span><br />
                         <span className="text-white">AND HELP MILLIONS</span>
                     </h1>
                     <p className="text-2xl mt-2">
-                        Together, we create success and change lives.
+                        Together, we create success and <br /> change lives.
                     </p>
-                    <div className="flex justify-center items-center">
-                        <p className="text-3xl font-bold mt-4">100+</p>
+                    <div className="flex font-bold items-center">
+                        <img src="/assets/fotos.png" alt="Foto" className="w-6 h-6" />
                     </div>
                     <a
                         href="#"
