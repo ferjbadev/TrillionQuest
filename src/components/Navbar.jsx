@@ -2,10 +2,9 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
     return (
-        <div className="relative inset-0 bg-gradient-to-b from-gray-950/10 to-transparent text-white shadow-md z-50">
-            <div className="container mx-auto flex items-center justify-between py-4 px-10">
+        <div className="absolute w-full mx-auto text-white z-50">
+            <div className="container mx-auto flex items-center justify-between py-4 px-6">
                 {/* Logo y botones del lado izquierdo */}
                 <div className="flex items-center space-x-24">
                     <a href="#" className="text-4xl font-bold cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
@@ -13,7 +12,7 @@ const Navbar = () => {
                     </a>
                     <a
                         href="#"
-                        className="hidden md:inline-block text-2xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300"
+                        className="hidden md:inline-block text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300"
                     >
                         Why Choose Us
                     </a>
@@ -21,16 +20,16 @@ const Navbar = () => {
 
                 {/* Botones del lado derecho para pantallas grandes */}
                 <div className="hidden md:flex items-center space-x-20">
-                    <a href="#" className="text-2xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
+                    <a href="#" className="text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
                         About Us
                     </a>
 
                     {/* Dropdown para Services */}
                     <div className="relative group">
-                        <button className="text-2xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition">
+                        <button className="text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition">
                             Services
                         </button>
-                        <ul className="absolute hidden group-hover:block bg-gray-700 text-white space-y-2 top-full left-0 w-40 py-2 px-4 rounded shadow-lg">
+                        {/* <ul className="absolute hidden group-hover:block bg-gray-700 text-white space-y-2 top-full left-0 w-40 py-2 px-4 rounded shadow-lg">
                             <li>
                                 <a href="#" className="block text-lg cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
                                     Web Development
@@ -46,10 +45,10 @@ const Navbar = () => {
                                     UI/UX Design
                                 </a>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
 
-                    <a href="#" className="text-2xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
+                    <a href="#" className="text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
                         Contact
                     </a>
                 </div>

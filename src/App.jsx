@@ -4,20 +4,23 @@ import About from './pages/About'
 import SocialMediaExpertise from './pages/SocialMediaExpertise'
 import AIPoweredBusiness from './pages/AIPoweredB'
 import FromAds from './pages/FromAds'
-import ContactUs from './pages/ContactUs'
+// import ContactUs from './pages/ContactUs'
+import MeetOurTeam from './pages/MeetOurTeam'
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
-
   return (
-    <div className='w-full h-auto mx-auto bg-black'>
+    <div className='bg-black'>
       <Navbar />
       <Home />
       <About />
       <AIPoweredBusiness />
       <SocialMediaExpertise />
       <FromAds />
-      <ContactUs />
+      {/* <ContactUs /> */}
+      <MeetOurTeam />
+      <Footer />
     </div>
   )
 }
