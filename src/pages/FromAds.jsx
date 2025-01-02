@@ -7,9 +7,9 @@ const FromAds = () => {
     return (
         <div className='container py-10 mx-auto flex justify-center'>
             {/*Section 1*/}
-            <section className='flex flex-col justify-center items-start'>
+            <section className='flex flex-col justify-evenly  items-start'>
                 <div className='text-white '>
-                    <h1 className='text-5xl font-extrabold mb-8'>From Ads to <br />
+                    <h1 className='text-5xl font-extrabold mb-8 '>From Ads to <br />
                         Software development
                     </h1>
                     <p className='text-2xl'>
@@ -17,7 +17,7 @@ const FromAds = () => {
                     </p>
                 </div>
 
-                <div className='text-white h-[65vh] justify-end flex items-end p-4'>
+                <div className='text-white  justify-end flex items-end p-4 '>
                     <ul className='text-xl'>
                         <li className='mb-4 flex items-center'>
                             • Personalized Marketing Campaigns

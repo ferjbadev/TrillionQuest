@@ -4,7 +4,8 @@ import isabelPhoto from '../assets/Isabel.png'
 import ninoPhoto from '../assets/Nino.png'
 import { MdOutlineEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
-import { LuMapPin } from "react-icons/lu";
+// import { LuMapPin } from "react-icons/lu";
+import logo2 from '../assets/logo2.png'
 
 const MeetOurTeam = () => {
     return (
@@ -12,12 +13,12 @@ const MeetOurTeam = () => {
             className="w-ful h-[100vh] flex flex-col items-center justify-around bg-no-repeat bg-bottom"
             style={{ backgroundImage: `url(${RayOfLight})` }}
         >
-            {/* Title */}
+            {/* Titulo */}
             <span className="capitalize text-5xl font-extrabold text-white">
                 meet our team
             </span>
 
-            {/* Team Photos & Descriptions */}
+            {/* Equipo */}
             <div className="flex w-full h-[30vh] justify-evenly">
                 {/* Emily */}
                 <div className="space-y-9">
@@ -103,7 +104,7 @@ const MeetOurTeam = () => {
                         >
                             <FaPhone size={35} />
                         </a>
-                        <span>+1 (515) 553-7235</span>
+                        <span className="hover:scale-110 hover:text-yellow-500">+1 (515) 553-7235</span>
                     </li>
 
                     <li className="flex font-bold text-2xl text-white text-opacity-90 gap-x-5">
@@ -115,10 +116,10 @@ const MeetOurTeam = () => {
                         >
                             <MdOutlineEmail size={35} />
                         </a>
-                        <span>info@trillionquest.com</span>
+                        <span className="hover:scale-110 hover:text-yellow-500">info@trillionquest.com</span>
                     </li>
 
-                    <li className="flex font-bold text-2xl text-white text-opacity-90 gap-x-5">
+                    {/* <li className="flex font-bold text-2xl text-white text-opacity-90 gap-x-5">
                         <a
                             href="https://linkedin.com"
                             target="_blank"
@@ -128,11 +129,15 @@ const MeetOurTeam = () => {
                             <LuMapPin size={35} />
                         </a>
                         <span>Add a subheading</span>
-                    </li>
+                    </li> */}
                 </div>
 
+                {/*TEMPORAL LOGO */}
+                <div className=''>
+                    <img src={logo2} className='w-[10vw] h-auto' />
+                </div>
                 {/* Useful Links */}
-                <div className="flex flex-col justify-evenly text-start text-white text-opacity-90 font-bold text-2xl">
+                {/* <div className="flex flex-col justify-evenly text-start text-white text-opacity-90 font-bold text-2xl">
                     <span className="uppercase ml-4">USEFUL LINKS</span>
 
                     <span className="w-[15vw]">
@@ -155,7 +160,7 @@ const MeetOurTeam = () => {
                         </a>
                         <hr className="text-gray-400/80" />
                     </span>
-                </div>
+                </div> */}
             </div>
         </div>
     );

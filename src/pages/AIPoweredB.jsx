@@ -7,19 +7,19 @@ const AIPoweredBusiness = () => {
             <div className="h-[60vh] text-white flex">
                 {/* Texto */}
                 <div className="mt-8">
-                    <p className="text-5xl font-bold">
+                    <p className="text-5xl font-bold ml-10">
                         AI-Powered Business
                         <br />
                         Solutions
                     </p>
 
-                    <p className="text-white text-3xl mt-7">
+                    <p className="text-white text-3xl mt-7 ml-10">
                         Leverage the power of artificial <br />
                         intelligence to optimize your <br />
                         business process.
                     </p>
 
-                    <button className="mt-14 px-12 py-2 border border-white bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 text-yellow-500 font-bold rounded-full cursor-pointer hover:scale-110 transition-transform duration-300 ml-4 text-3xl relative z-10 overflow-hidden">
+                    <button className="mt-14 ml-10 px-12 py-2 border border-white bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 text-yellow-500 font-bold rounded-full cursor-pointer hover:scale-110 transition-transform duration-300 text-3xl relative z-10 overflow-hidden">
                         Learn more
                     </button>
                 </div>
