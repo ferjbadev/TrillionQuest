@@ -15,13 +15,16 @@ function App() {
     <div className='bg-black'>
       <Navbar />
       <Home />
+
+      <About />
       <FromAds />
       <AIPoweredBusiness />
       <SocialMediaExpertise />
-      <About />
-      <Footer />
-      <MeetOurTeam2 />
       <MeetOurTeam />
+      <Footer />
+
+
+      <MeetOurTeam2 /> */}
     </div>
   )
 }

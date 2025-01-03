@@ -2,7 +2,24 @@ import { useState, useRef, useEffect } from "react";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [hasScrolled, setHasScrolled] = useState(false);
     const mobileMenuRef = useRef(null);
+
+    useEffect(() => {
+        // Detecta si el usuario ha hecho scroll
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setHasScrolled(true);
+            } else {
+                setHasScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         // Cierra el menú al hacer clic fuera
@@ -19,35 +36,64 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className="absolute w-full text-white z-50">
+        <div
+            className={`absolute w-full text-white z-50 transition-all duration-300 ${hasScrolled ? "bg-gray-800 shadow-lg" : ""
+                }`}
+        >
             {/* Navbar Principal */}
             <div className="container mx-auto flex items-center justify-between py-4 px-6">
                 {/* Logo y enlaces principales */}
-                <div className="flex items-center space-x-24">
-                    <a href="#" className="text-4xl font-bold cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
-                        Trillion Fundation
-                    </a>
-                    {/* Enlace visible en pantallas grandes */}
+                <div className="flex items-center space-x-4">
+                    {/* Enlace visible solo en pantallas md y gl */}
                     <a
                         href="#"
-                        className="hidden md:inline-block text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300"
+                        className="hidden sm:hidden md:inline-block gl:inline-block md:text-4xl gl:text-4xl font-bold cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300"
+                    >
+                        Trillion Fundation
+                    </a>
+
+                    {/* Imagen visible solo en pantallas sm */}
+                    <a href="#" className="mr-auto">
+                        <img
+                            src="/miniLogo.png"
+                            alt="Mini Logo"
+                            className="block sm:block md:hidden gl:hidden w-12 h-12 self-start"
+                        />
+                    </a>
+                    {/* Enlace visible solo en pantallas grandes */}
+                    <a
+                        href="#"
+                        className="ml-4 hidden md:inline-block text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300"
                     >
                         Why Choose Us
                     </a>
                 </div>
+                <button
+                    className="block sm:block md:hidden gl:hidden border border-white
+                                bg-gradient-to-r from-gray-950 via-gray-700 to-gray-400 
+                                text-yellow-500 font-bold rounded-full 
+                                transition-transform px-5 py-1 text-1xl"
+                >
+                    Contact Us
+                </button>
 
                 {/* Enlaces visibles solo en pantallas grandes */}
                 <div className="hidden md:flex items-center space-x-20">
-                    <a href="#" className="text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
+                    <a
+                        href="#"
+                        className="text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300"
+                    >
                         About Us
                     </a>
                     <div className="relative group">
                         <button className="text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition">
                             Services
                         </button>
-                        {/* Ejemplo de dropdown para Services (desactivado por ahora) */}
                     </div>
-                    <a href="#" className="text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300">
+                    <a
+                        href="#"
+                        className="text-3xl cursor-pointer hover:scale-110 hover:text-yellow-500 transition duration-300"
+                    >
                         Contact
                     </a>
                 </div>
@@ -105,6 +151,8 @@ const Navbar = () => {
                     </a>
                 </div>
             )}
+            {/* Linea blanca */}
+            <hr className="text-whie border border-white w-full" />
         </div>
     );
 };
