@@ -5,7 +5,7 @@ import ContactButton from "../components/ContactButton";
 
 // eslint-disable-next-line react/prop-types
 const AnimatedCircle = ({ glowColor, inset = false }) => (
-    <div className="relative flex items-center justify-center w-[650px] h-[650px] rounded-full">
+    <div className="relative flex items-center justify-center md:left-96 gl:left-96 z-30 w-[300px] h-[300px] md:w-[650px] md:h-[650px] rounded-full">
         <motion.div
             className="absolute w-full h-full rounded-full"
             style={{
@@ -28,28 +28,28 @@ const AnimatedCircle = ({ glowColor, inset = false }) => (
 
 const Home = () => {
     return (
-        <div className="container mx-auto h-[100vh] flex flex-col items-center">
+        <div className="h-[100vh] flex flex-col items-center">
             {/* Sección del Logo */}
             <section className="relative flex items-center justify-center w-full h-screen overflow-hidden">
                 {/* Imagen de fondo */}
                 <img
                     src="/fondo.png"
                     alt="Fondo"
-                    className="absolute w-[100%] h-auto transform translate-x-12 -translate-y-1"
+                    className="absolute w-[100%] h-auto left-2  transform translate-x-12 -translate-y-1"
                 />
 
                 {/* Círculo animado */}
-                <div className="absolute z-10">
+                <div className="absolute left-24 md:left-24 gl:left z-50 md:z-10 gl:z-10">
                     <AnimatedCircle glowColor="rgba(255, 255, 255, 1)" inset />
                 </div>
 
                 {/* Imagen del robot con animación */}
                 <div className="relative w-full h-[50vh] flex items-center justify-center">
-                    {/* Primera imagen */}
+                    {/* Robot */}
                     <motion.img
                         src="/robot.png"
                         alt="Robot"
-                        className="absolute z-20 w-[40%] h-auto"
+                        className="absolute z-20 w-[40%] h-auto right-20 md:right-auto lg:right-auto"
                         initial={{ y: "13vh", opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{
@@ -58,14 +58,11 @@ const Home = () => {
                         }}
                     />
 
-                    {/* Segunda imagen */}
+                    {/* Sombra */}
                     <motion.img
                         src="/sombra.png"
                         alt="Otro Robot"
-                        className="absolute z-20 w-full h-auto"
-                        // Aquí ajustas la posición según necesites:
-                        //  - left-[40%] es un ejemplo. 
-                        //  - Podrías usar top, bottom, right, etc.
+                        className="absolute z-20 mt-32 w-full h-auto"
                         initial={{ y: "13vh", opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{
@@ -78,22 +75,20 @@ const Home = () => {
                 <img
                     src="/logo.png"
                     alt="Logo"
-                    className="absolute z-30 w-[40%] -mb-32 h-auto"
+                    className="absolute z-30 w-[50%] right-12 md:right-auto gl:right-auto md:w-[40%] gl:w-[40%] -mb-32 h-auto"
                 />
             </section>
 
             {/* Formulario */}
-            <section className="absolute inset-0">
-                <Formulario />
-            </section>
+            <Formulario />
 
             {/* Texto Digital Marketing */}
-            <section className="w-full -mt-8 z-40 mb-2">
+            <section className="md:w-full gl:w-full -mt-8 z-40 py-12 md:py-0 gl:py-0 sm:mb-20 md:mb-20 gl:mb-2">
                 <Digital />
             </section>
 
             {/* Botón Contacto */}
-            <section className="bottom-0 py-4 z-20 w-full bg-black">
+            <section className="py-8 z-20 w-full">
                 <ContactButton />
             </section>
         </div>

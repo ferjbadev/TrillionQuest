@@ -21,26 +21,7 @@ const MeetOurTeam = () => {
             {/* Equipo */}
             <div className="flex flex-col md:block w-full h-screen md:h-[30vh] justify-center items-center md:justify-evenly bg-gray-400">
                 {/* Emily */}
-                <div className="md:space-y-9">
-                    {/* Emily Photo */}
-                    <div
-                        className="flex items-end border-2 w-[50vw] md:w-100 h-[30vh] md:h-[350px] rounded-3xl bg-cover bg-center"
-                        style={{ backgroundImage: `url(${emilyPhoto})` }}
-                    >
-                        <div className="w-full py-1 bg-black bg-opacity-80 text-white text-center text-opacity-90">
-                            <h2 className="font-bold tracking-wide">Emily Loor</h2>
-                            <span>Director of Strategy (DoS)</span>
-                        </div>
-                    </div>
 
-                    <div className="w-full py-1 bg-black bg-opacity-80 text-white text-center text-opacity-90">
-                        <span className="tracking-wide">
-                            &quot;Great strategy is not just planning, it&apos;s <br />
-                            creating pathways for the impossible to <br />
-                            become achievable.&quot;
-                        </span>
-                    </div>
-                </div>
 
                 {/* Agostino */}
                 <div className="md:space-y-9">
@@ -64,25 +45,7 @@ const MeetOurTeam = () => {
                 </div>
 
                 {/* Isabel */}
-                <div className="md:space-y-9">
-                    <div
-                        className="flex items-end border-2 border-gray-800 w-[50vw] md:w-100 h-[40vh] md:h-[350px] rounded-3xl bg-cover bg-center"
-                        style={{ backgroundImage: `url(${isabelPhoto})` }}
-                    >
-                        <div className="w-full py-1 bg-black bg-opacity-80 text-white text-center text-opacity-90">
-                            <h2 className="font-bold tracking-wide">Isabel Sanchez</h2>
-                            <span>Chief Creative Officer (CCO)</span>
-                        </div>
-                    </div>
 
-                    <div className="w-full py-1 bg-black bg-opacity-80 text-white text-center text-opacity-90">
-                        <span className="tracking-wide">
-                            &quot;Creativity is the power to connect the <br />
-                            seemingly unconnected and turn ideas <br />
-                            into impactful realities.&quot;
-                        </span>
-                    </div>
-                </div>
             </div>
 
             {/* CTA Button */}
